@@ -69,6 +69,11 @@ app.get("/bad",(req,res)=>{
     });
 });
 
+app.get("/projects",(req,res)=>{
+    res.render('projects.hbs',{
+        pageTitle: 'Projects working page'
+    });
+});
 
 
 app.listen(port,()=>{
